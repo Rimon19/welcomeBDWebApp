@@ -1,0 +1,217 @@
+<main style="padding-top:26px;">
+  
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-2 offset-md-2 col-gl-8 col-md-8 col-sm-12">
+                    <h2 class="text-center">Add a Room for Hotel</h2>
+                    
+                    <!-- /.mt-5 -->
+                    <div class="mt-5">
+                        <div class="row">
+                            <div class="col-lg-9 col-md-9 col-sm-12">
+                                
+                                <form #f="ngForm" (ngSubmit)="save(Room)" class="mt-3">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="form-group">
+                                                <label for="name" class="col-form-label">Hotel Name</label>
+                                                <!-- /.col-form-label -->
+                                                <input #hotelname="ngModel" [(ngModel)]="Room.hotelname" name="hotelname" type="text" class="form-control" placeholder=""/>
+                                                <!-- /.form-control -->
+                                            </div>
+                                            <!-- /.form-group -->
+                                        </div>
+                                        <!-- /.col-lg-6 col-md-6 -->
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="form-group">
+                                                <label for="email-address" class="col-form-label">Room Type</label>
+                                                <!-- /.col-form-label -->
+                                                <input #roomtype="ngModel" [(ngModel)]="Room.roomtype" name="roomtype" type="text" class="form-control" placeholder=""/>
+                                                <!-- /.form-control -->
+                                            </div>
+                                            <!-- /.form-group -->
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                          <div class="form-group">
+                                              <label for="name" class="col-form-label">Price (per night)</label>
+                                              <!-- /.col-form-label -->
+                                              <input #price="ngModel" [(ngModel)]="Room.price" name="price" type="text" class="form-control" placeholder=""/>
+                                              <!-- /.form-control -->
+                                          </div>
+                                          <!-- /.form-group -->
+                                      </div>
+                                      <!-- /.col-lg-6 col-md-6 -->
+                                      <div class="col-lg-6 col-md-6">
+                                          <div class="form-group">
+                                              <label for="email-address" class="col-form-label">Max Accupancy</label>
+                                              <!-- /.col-form-label -->
+                                              <input #maxaccupancy="ngModel" [(ngModel)]="Room.maxaccupancy" name="maxaccupancy" type="text" class="form-control" placeholder="Enter your Address"/>
+                                              <!-- /.form-control -->
+                                          </div>
+                                          <!-- /.form-group -->
+                                      </div>
+                                      <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="email-address" class="col-form-label">Cancellation Policy</label>
+                                            <!-- /.col-form-label -->
+                                            <input #cancellation="ngModel" [(ngModel)]="Room.cancellation" name="cancellation" type="text" class="form-control" placeholder=""/>
+                                            <!-- /.form-control -->
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                      <div class="form-group">
+                                          <label for="email-address" class="col-form-label">Payment Terms</label>
+                                          <!-- /.col-form-label -->
+                                          <input #paymentterms="ngModel" [(ngModel)]="Room.paymentterms" name="paymentterms" type="text" class="form-control" placeholder="Enter your Address"/>
+                                          <!-- /.form-control -->
+                                      </div>
+                                      <!-- /.form-group -->
+                                    </div>
+                                  <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <label for="email-address" class="col-form-label">Other Information</label>
+                                        <!-- /.col-form-label -->
+                                        <input #otherinfo="ngModel" [(ngModel)]="Room.otherinfo" name="otherinfo" type="textarea" class="form-control" placeholder="Enter your Address"/>
+                                        <!-- /.form-control -->
+                                    </div>
+                                    <!-- /.form-group -->
+                                  </div>
+                                        <!-- /.col-lg-6 col-md-6 -->
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="message-input" class="col-form-label">Description</label>
+                                                <!-- /.col-form-label -->
+                                                <textarea #description="ngModel" [(ngModel)]="Room.description" name="description" class="form-control" placeholder="write Room Description"></textarea>
+                                            </div>
+                                            <!-- /.form-group -->
+                                           
+                                            <!-- /.btn btn-primary -->
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                          <div class="form-group">
+                                              <label for="name" class="col-form-label">Room Headings</label>
+                                              <!-- /.col-form-label -->
+                                              <textarea #Roomheading="ngModel" [(ngModel)]="Room.Roomheading" name="Roomheading" class="form-control" placeholder=""></textarea>
+                                              <!-- /.form-control -->
+                                          </div>
+                                          <!-- /.form-group -->
+                                      </div>
+                                      <!-- /.col-lg-6 col-md-6 -->
+                                      
+                                      
+                                    <!-- /.col-lg-6 col-md-6 -->
+                                    
+                                    <div class="col-lg-6 col-md-6">
+                                      <div class="form-group">
+                                          <label for="name" class="col-form-label">Room amenities</label>
+                                          <!-- /.col-form-label -->
+                                          <div class="checkbox">
+                                            <label><input #aircon="ngModel" [(ngModel)]="Room.aircon" name="aircon" type="checkbox" value="">Air Conditioning</label>
+                                          </div>
+                                          <div class="checkbox">
+                                            <label><input #breakfastincluded="ngModel" [(ngModel)]="Room.breakfastincluded" name="breakfastincluded" type="checkbox" value="">Breakfast Included</label>
+                                          </div>
+                                          <div class="checkbox">
+                                            <label><input #resturant="ngModel" [(ngModel)]="Room.resturant" name="resturant" type="checkbox" value="">Resturant</label>
+                                          </div>
+                                          <div class="checkbox">
+                                            <label><input #barnlounge="ngModel" [(ngModel)]="Room.barnlounge" name="barnlounge" type="checkbox" value="">Bar/Lounge</label>
+                                          </div>
+                                          <div class="checkbox">
+                                            <label><input #gym="ngModel" [(ngModel)]="Room.gym" name="gym" type="checkbox" value="">Fitness Center/Gym</label>
+                                          </div>
+                                          <div class="checkbox">
+                                            <label><input #freewifi="ngModel" [(ngModel)]="Room.freewifi" name="freewifi" type="checkbox" value="">Free Wifi</label>
+                                          </div>
+                                          <div class="checkbox">
+                                            <label><input #airport="ngModel" [(ngModel)]="Room.airport" name="airport" type="checkbox" value="">Airport Transportation</label>
+                                          </div>
+                                          <div class="checkbox">
+                                            <label><input #breakfast="ngModel" [(ngModel)]="Room.breakfast" name="breakfast" type="checkbox" value="">Breakfast Included</label>
+                                          </div>
+                                          <div class="checkbox">
+                                            <label><input #parking="ngModel" [(ngModel)]="Room.parking" name="parking" type="checkbox" value="">Parking</label>
+                                          </div>
+                                          <div class="checkbox">
+                                            <label><input #wheelchain="ngModel" [(ngModel)]="Room.wheelchain" name="wheelchain" type="checkbox" value="">Wheelchair Access</label>
+                                          </div>
+                                          <div class="checkbox">
+                                            <label><input #internetaccess="ngModel" [(ngModel)]="Room.internetaccess" name="internetaccess" type="checkbox" value="">Business Center with Internet Access</label>
+                                          </div>
+                                          <!-- /.form-control -->
+                                      </div>
+                                      <!-- /.form-group -->
+                                  </div>
+                                  <!-- /.col-lg-6 col-md-6 -->   
+                                <!-- /.col-lg-6 col-md-6 -->
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <label for="email-address" class="col-form-label">Room Image link -1</label>
+                                        <!-- /.col-form-label -->
+                                        <input #image1="ngModel" [(ngModel)]="Room.image1" name="image1" type="text" class="form-control" placeholder=""/>
+                                        <!-- /.form-control -->
+                                    </div>
+                                    <!-- /.form-group -->
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                  <div class="form-group">
+                                      <label for="email-address" class="col-form-label">Room Image link -2</label>
+                                      <!-- /.col-form-label -->
+                                      <input #image2="ngModel" [(ngModel)]="Room.image2" name="image2" type="text" class="form-control" placeholder=""/>
+                                      <!-- /.form-control -->
+                                  </div>
+                                  <!-- /.form-group -->
+                              </div>
+                              <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label for="email-address" class="col-form-label">Room Image link -3</label>
+                                    <!-- /.col-form-label -->
+                                    <input #image3="ngModel" [(ngModel)]="Room.image3" name="image3" type="text" class="form-control" placeholder=""/>
+                                    <!-- /.form-control -->
+                                </div>
+                                <!-- /.form-group -->
+                              </div>
+                              
+                              <!-- /.form-group -->
+                            
+                            <input class="mt-3 btn btn-primary" type="submit" value="Save"/>
+  
+                                        <!-- /.col-12 -->
+                                    </div>
+                                    <!-- /.row -->
+                                </form>
+                            </div>
+                            <!-- /.col-lg-9 col-md-9 col-sm-12 -->
+                           
+                            <!-- /.col-lg-3 col-md-3 col-sm-12 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.mt-3 -->
+                </div>
+                <!-- /.offset-lg-2 offset-md-2 col-gl-8 col-md-8 col-sm-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.section -->
+  
+  
+    
+    <!-- #login-modal .modal -->
+    <!-- END-OF Login Modal -->
+  
+    <!-- START Register Modal -->
+   
+    <!-- #register-modal .modal -->
+    <!-- END-OF Register Modal -->
+  
+   
+    <!-- #reset-password-modal .modal -->
+    <!-- END-OF Register Modal -->
+  
+  </main>
+  

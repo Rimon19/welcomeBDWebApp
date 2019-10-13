@@ -1,0 +1,187 @@
+<main style="padding-top:26px;">
+  
+  <div class="section">
+      <div class="container">
+          <div class="row">
+              <div class="offset-lg-2 offset-md-2 col-gl-8 col-md-8 col-sm-12">
+                  <h2 class="text-center">Add a Place </h2>
+                  
+                  <!-- /.mt-5 -->
+                  <div class="mt-5">
+                      <div class="row">
+                          <div class="col-lg-9 col-md-9 col-sm-12">
+                              
+                              <form #f="ngForm" (ngSubmit)="save(Place)" class="mt-3">
+                                  <div class="row">
+                                      <div class="col-lg-6 col-md-6">
+                                          <div class="form-group">
+                                              <label for="name" class="col-form-label">Place Name</label>
+                                              <!-- /.col-form-label -->
+                                              <input #placename="ngModel" [(ngModel)]="Place.placename" name="placename" type="text" class="form-control" placeholder=""/>
+                                              <!-- /.form-control -->
+                                          </div>
+                                          <!-- /.form-group -->
+                                      </div>
+									  <div class="col-lg-6 col-md-6">
+                                          <div class="form-group">
+                                              <label for="name" class="col-form-label">District</label>
+                                              <!-- /.col-form-label -->
+                                              <input #district="ngModel" [(ngModel)]="Place.district" name="district" type="text" class="form-control" placeholder=""/>
+                                              <!-- /.form-control -->
+                                          </div>
+                                          <!-- /.form-group -->
+                                      </div>
+									  <div class="col-lg-6 col-md-6">
+                                          <div class="form-group">
+                                              <label for="name" class="col-form-label">Area</label>
+                                              <!-- /.col-form-label -->
+                                              <input #area="ngModel" [(ngModel)]="Place.area" name="area" type="text" class="form-control" placeholder=""/>
+                                              <!-- /.form-control -->
+                                          </div>
+                                          <!-- /.form-group -->
+                                      </div>
+									  <div class="col-lg-6 col-md-6">
+                                          <div class="form-group">
+                                              <label for="name" class="col-form-label">Address</label>
+                                              <!-- /.col-form-label -->
+                                              <input #address="ngModel" [(ngModel)]="Place.address" name="address" type="text" class="form-control" placeholder=""/>
+                                              <!-- /.form-control -->
+                                          </div>
+                                          <!-- /.form-group -->
+                                      </div>
+									  <div class="col-lg-6 col-md-6">
+                                          <div class="form-group">
+                                              <label for="name" class="col-form-label">Review</label>
+                                              <!-- /.col-form-label -->
+                                              <input #review="ngModel" [(ngModel)]="Place.review" name="review" type="text" class="form-control" placeholder=""/>
+                                              <!-- /.form-control -->
+                                          </div>
+                                          <!-- /.form-group -->
+                                      </div><div class="col-lg-6 col-md-6">
+                                          <div class="form-group">
+                                              <label for="name" class="col-form-label">Tags</label>
+                                              <!-- /.col-form-label -->
+                                              <input #tag="ngModel" [(ngModel)]="Place.tag" name="tag" type="text" class="form-control" placeholder=""/>
+                                              <!-- /.form-control -->
+                                          </div>
+                                          <!-- /.form-group -->
+                                      </div>
+                                      <!-- /.col-lg-6 col-md-6 -->
+                                      
+                                      <!-- /.col-lg-6 col-md-6 -->
+                                      <div class="col-12">
+                                          <div class="form-group">
+                                              <label for="message-input" class="col-form-label">Description</label>
+                                              <!-- /.col-form-label -->
+                                              <textarea #description="ngModel" [(ngModel)]="Place.description" name="description" class="form-control" placeholder="write Room Description"></textarea>
+                                          </div>
+                                          <!-- /.form-group -->
+                                         
+                                          <!-- /.btn btn-primary -->
+                                      </div>
+									  <div class="col-12">
+                                          <div class="form-group">
+                                              <label for="message-input" class="col-form-label">Route from the Capital</label>
+                                              <!-- /.col-form-label -->
+                                              <textarea #route="ngModel" [(ngModel)]="Place.route" name="route" class="form-control" placeholder="write Room Description"></textarea>
+                                          </div>
+                                          <!-- /.form-group -->
+                                         
+                                          <!-- /.btn btn-primary -->
+                                      </div>
+                                      
+                                    <!-- /.col-lg-6 col-md-6 -->
+                               
+                                    
+                                  <!-- /.col-lg-6 col-md-6 -->
+                                   
+                                <!-- /.col-lg-6 col-md-6 -->   
+                              <!-- /.col-lg-6 col-md-6 -->
+                              <div class="col-lg-6 col-md-6">
+                                  <div class="form-group">
+                                      <label for="email-address" class="col-form-label">Place Image link -1</label>
+                                      <!-- /.col-form-label -->
+                                      <input #image1="ngModel" [(ngModel)]="Place.image1" name="image1" type="text" class="form-control" placeholder=""/>
+                                      <!-- /.form-control -->
+                                  </div>
+                                  <!-- /.form-group -->
+                              </div>
+							  <div class="col-lg-6 col-md-6">
+                                  <div class="form-group">
+                                      <label for="email-address" class="col-form-label">Place Image link -2</label>
+                                      <!-- /.col-form-label -->
+                                      <input #image2="ngModel" [(ngModel)]="Place.image2" name="image2" type="text" class="form-control" placeholder=""/>
+                                      <!-- /.form-control -->
+                                  </div>
+                                  <!-- /.form-group -->
+                              </div>
+							  <div class="col-lg-6 col-md-6">
+                                  <div class="form-group">
+                                      <label for="email-address" class="col-form-label">Place Image link -3</label>
+                                      <!-- /.col-form-label -->
+                                      <input #image3="ngModel" [(ngModel)]="Place.image3" name="image3" type="text" class="form-control" placeholder=""/>
+                                      <!-- /.form-control -->
+                                  </div>
+                                  <!-- /.form-group -->
+                              </div>
+							  <div class="col-lg-6 col-md-6">
+                                  <div class="form-group">
+                                      <label for="email-address" class="col-form-label">Place Image link -4</label>
+                                      <!-- /.col-form-label -->
+                                      <input #image4="ngModel" [(ngModel)]="Place.image4" name="image4" type="text" class="form-control" placeholder=""/>
+                                      <!-- /.form-control -->
+                                  </div>
+                                  <!-- /.form-group -->
+                              </div>
+							  <div class="col-lg-6 col-md-6">
+                                  <div class="form-group">
+                                      <label for="email-address" class="col-form-label">Place Image link -5</label>
+                                      <!-- /.col-form-label -->
+                                      <input #image5="ngModel" [(ngModel)]="Place.image5" name="image5" type="text" class="form-control" placeholder=""/>
+                                      <!-- /.form-control -->
+                                  </div>
+                                  <!-- /.form-group -->
+                              </div>
+							  
+                              
+                            
+                            <!-- /.form-group -->
+                          
+                          <input class="mt-3 btn btn-primary" type="submit" value="Save"/>
+
+                                      <!-- /.col-12 -->
+                                  </div>
+                                  <!-- /.row -->
+                              </form>
+                          </div>
+                          <!-- /.col-lg-9 col-md-9 col-sm-12 -->
+                         
+                          <!-- /.col-lg-3 col-md-3 col-sm-12 -->
+                      </div>
+                      <!-- /.row -->
+                  </div>
+                  <!-- /.mt-3 -->
+              </div>
+              <!-- /.offset-lg-2 offset-md-2 col-gl-8 col-md-8 col-sm-12 -->
+          </div>
+          <!-- /.row -->
+      </div>
+      <!-- /.container -->
+  </div>
+  <!-- /.section -->
+
+
+  
+  <!-- #login-modal .modal -->
+  <!-- END-OF Login Modal -->
+
+  <!-- START Register Modal -->
+ 
+  <!-- #register-modal .modal -->
+  <!-- END-OF Register Modal -->
+
+ 
+  <!-- #reset-password-modal .modal -->
+  <!-- END-OF Register Modal -->
+
+</main>

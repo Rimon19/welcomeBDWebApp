@@ -1,0 +1,252 @@
+<main>
+  <div class="page-hero sm overlay  no-overflow">
+      <div class="overlay-text d-flex align-items-center">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12">
+                      <div class="h1">Hotels in Bangladesh</div>
+                      <p>
+                          The Best Directory for Hotels
+                      </p>
+                      <div class="main-home-search">
+                          <div class="search-icon">
+                              <i class="fa fa-search"></i>
+                          </div>
+                          <!-- /.search-icon -->
+                          <input type="text" class="search-input" placeholder='Try to find "Hotel"' />
+                          <!-- /.search-input -->
+
+                          <div class="search-result-drop-down">
+                              <div class="result-list">
+                                  <div class="search-result-item">
+                                      <div>
+                                          <i class="flaticon-map-marker mr-2 small-icon"></i>
+                                      </div>
+
+                                      <div class="title">
+
+                                          London (and vicinity), England, United Kingdom
+                                      </div>
+                                      <!-- /.title -->
+                                  </div>
+                                  <!-- /.search-result-item -->
+                                  <div class="search-result-item">
+                                      <div>
+                                          <i class="flaticon-map-marker mr-2 small-icon"></i>
+                                      </div>
+
+                                      <div class="title">
+
+                                          Londonderry (county), Northern Ireland, United Kingdom
+                                      </div>
+                                      <!-- /.title -->
+                                  </div>
+                                  <!-- /.search-result-item -->
+                                  <div class="search-result-item">
+                                      <div>
+                                          <i class="flaticon-map-marker mr-2 small-icon"></i>
+                                      </div>
+
+                                      <div class="title">
+
+                                          London, Kentucky, United States of America
+                                      </div>
+                                      <!-- /.title -->
+                                  </div>
+                                  <!-- /.search-result-item -->
+                                  <div class="search-result-item">
+                                      <div>
+                                          <i class="flaticon-sleeping-bed-silhouette mr-2 small-icon"></i>
+                                      </div>
+
+                                      <div class="title">
+
+                                          Londonderry, New Hampshire, United States of America
+                                      </div>
+                                      <!-- /.title -->
+                                  </div>
+                                  <!-- /.search-result-item -->
+                                  <div class="search-result-item">
+                                      <div>
+                                          <i class="flaticon-traveler-with-a-suitcase mr-2 small-icon"></i>
+                                      </div>
+
+                                      <div class="title">
+
+                                          London (and vicinity), England, United Kingdom
+                                      </div>
+                                      <!-- /.title -->
+                                  </div>
+                                  <!-- /.search-result-item -->
+                                  <div class="search-result-item">
+                                      <div>
+                                          <i class="flaticon-traveler-with-a-suitcase mr-2 small-icon"></i>
+                                      </div>
+
+                                      <div class="title">
+
+                                          London (and vicinity), England, United Kingdom
+                                      </div>
+                                      <!-- /.title -->
+                                  </div>
+                                  <!-- /.search-result-item -->
+                                  <div class="search-result-item">
+                                      <div>
+                                          <i class="flaticon-airplane-flight mr-2 small-icon"></i>
+                                      </div>
+
+                                      <div class="title">
+
+                                          London (and vicinity), England, United Kingdom
+                                      </div>
+                                      <!-- /.title -->
+                                  </div>
+                                  <!-- /.search-result-item -->
+                              </div>
+                              <!-- /.result-list -->
+                          </div>
+                          <!-- /.search-result-drop-down -->
+                      </div>
+                      <!-- /.main-home-search -->
+                  </div>
+                  <!-- /.col-12 -->
+              </div>
+              <!-- /.row -->
+          </div>
+          <!-- /.container -->
+      </div>
+      <!-- /.overlay-text -->
+      <div class="parallax-holder">
+
+
+          <img class="bg-parallax bg-parallax-neg" src="assets/images/page_hero/los-angeles-3.jpg" data-z-index="1"
+              data-parallax='{"y": -250,  "scale": 1.15, "smoothness": 15}' alt="image alt" />
+      </div>
+      <!-- /.parallax-holder -->
+  </div>
+  <!-- /.page-hero -->
+  <div class="section md">
+      <div class="container">
+          <div class="row">
+                <div class="col-md-12">
+                    <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/dist/pa-embed-player.min.js" async></script>
+                    <div class="pa-embed-player" style="width:100%; height:480px; display:none;"
+                    data-link="https://photos.app.goo.gl/whmtxK2BQ3uwvf1P8"
+                    data-title="New photo by Fahim Ferdous">
+                    <img data-src="https://lh3.googleusercontent.com/wjZ5dpBcvBnL2V9YOaT9pHfwSz1Zjsb6UfRVnLETdgeVheuiug_q8rG7X5_Q6x_vOtvXqFteHyrUDc4YeWZ-KLWV7v1UF1YUNjo0ci9sOksCGMtMqUWW6Asw4zBt0TrIZpcbBKCCfw=w1920-h1080" src="" alt="" />
+                    </div>
+                </div>
+              <div class="offset-lg-1 col-lg-10 col-12">
+                  <div class="row">
+                      <div class="col-12">
+                          <div class="hotel-list-card" *ngFor="let hotel of hotels">
+                              <div class="row no-gutters">
+                                  <div class="col-lg-3 col-md-12 col-sm-12">
+                                      <div class="hotle-cover-img-box">
+                                          <div class="wish-btn">
+                                              <i class="fa fa-heart"></i>
+                                          </div>
+                                          <!-- /.wish-btn -->
+                                          <img src="{{hotel.image1}}" alt="img alt" class="hotel-cover-img"
+                                              style="height:170px" />
+
+                                      </div>
+                                      <!-- /.hotle-cover-img-box -->
+                                  </div>
+                                  <!-- /.col-lg-3 col-md-12 col-sm-12 -->
+                                  <div class="col-lg-9 col-md-12 col-sm-12">
+                                      <div class="p-3"  >
+                                          <div class="row">
+                                              <div class="col-lg-8 col-md-8 col-sm-12 ">
+                                                  <div class="h5 hotel-name">{{hotel.name}}</div>
+                                                  <div class="hotel-location">
+                                                      <i class="flaticon-map-marker mr-1 x-small-icon"></i>
+                                                      {{hotel.address}}
+                                                  </div>
+                                                  <!-- /.hotel-location -->
+                                                  <!-- <div class="hotel-description">
+                                                      Located in the near of the downtown airport, the
+                                                      877-room, Meridian Hotel ...
+                                                  </div> -->
+                                                  <!-- /.hotel-description -->
+
+                                              </div>
+                                              <!-- /.col-lg-8 col-md-8 col-sm-12 -->
+                                              <div class="col-lg-4 col-md-4 col-sm-12 d-inline-flex justify-content-center align-items-center mt-3 mt-lg-0 mt-md-0">
+                                                  <div>
+                                                      <div class="small mb-2">
+
+                                                          <div>Hotel Class</div>
+                                                      </div>
+                                                      <div class="hotel-review-rate">
+                                                        {{hotel.hotelClass}}
+                                                          <!-- /.review-starts-list  -->
+                                                      </div>
+                                                      <!-- /.hotel-review-rate -->
+                                                      <div class="small text-center text-capitalize mt-1">
+
+                                                      </div>
+                                                      <!-- /.small -->
+                                                  </div>
+
+                                              </div>
+                                              <!-- /.col-lg-4 col-md-4 col-sm-12 -->
+                                          </div>
+                                          <!-- /.row -->
+                                          <!-- /.hotel-review-rate -->
+                                          <div class="row">
+                                              <div class="col-lg-8 col-md-8 col-sm-12">
+                                                  <div class="row gutters-2 mr-0 ml-0 mt-3 mt-lg-0 mt-md-0">
+
+                                                      <!-- /.col-lg-2 col-md-2 col-sm-3 -->
+                                                  </div>
+                                                  <!-- /.row -->
+                                              </div>
+                                              <!-- /.col-lg-8 col-md-8 col-sm-12 -->
+                                              <div class="col-lg-4 col-md-4 col-sm-12 d-inline-flex align-items-center">
+                                                  <div class="btn btn-book-now btn-block mt-3 mt-lg-0 mt-md-0">
+                                                    <a [routerLink]="['/hotel-details/', hotel.key]">See Details</a> 
+                                                  </div>
+                                                  <!-- /.btn btn-booking btn-block -->
+                                              </div>
+                                              <!-- /.col-lg-4 col-md-4 col-sm-12 -->
+                                          </div>
+                                          <!-- /.row -->
+                                      </div>
+                                  </div>
+                                  <!-- /.col-lg-3 col-md-12 col-sm-12 -->
+                              </div>
+                              <!-- /.row -->
+                          </div>
+                          <!-- /.hotel-list-card -->
+                      </div>
+                      
+                  </div>
+                  <!-- /.row -->
+                 
+                  <!-- /.row -->
+              </div>
+              <!-- /.col-lg-9 col-md-8 col-sm-12 -->
+          </div>
+          <!-- /.row -->
+      </div>
+      <!-- /.container -->
+  </div>
+  <!-- /.section -->
+
+  <!-- START Login Modal -->
+
+  <!-- #login-modal .modal -->
+  <!-- END-OF Login Modal -->
+
+  <!-- START Register Modal -->
+
+  <!-- #register-modal .modal -->
+  <!-- END-OF Register Modal -->
+
+  <!-- START Register Modal -->
+
+  <!-- #reset-password-modal .modal -->
+  <!-- END-OF Register Modal -->
+
+</main>

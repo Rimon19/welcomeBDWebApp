@@ -1,0 +1,158 @@
+
+  <main>
+     
+    <div class="">
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="{{specificHotelDetails.image1}}" height="" width="">
+                        <!-- /.top-right -->
+                    </div>
+                    
+                   
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.overlay-text -->
+
+
+    </div>
+      <div class="section md">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-7 col-md-9 col-sm-12">
+                      <div class="mt-2 mb-3">
+                          <h2 class="mb-2">{{specificHotelDetails.name}}</h2>
+                          <p>{{specificHotelDetails.address}}</p>
+                      </div>
+                      <!-- /.mt-4 mb-3 -->
+
+
+                      <h4 class="mt-4 mb-3">Hotel Facilities</h4>
+                      <div class="row mt20">
+                          <div class="col-md-6">
+                              <div *ngIf="specificHotelDetails.freeWifi" class="hotel-facilities"><i class="flaticon-wifi"></i> Wi-Fi Internet</div>
+                              <!-- /.hotel-facilities -->
+                              <div *ngIf="specificHotelDetails.parking" class="hotel-facilities"><i class="flaticon-car-parking"></i> Parking</div>
+                              <!-- /.hotel-facilities -->
+                              <div *ngIf="specificHotelDetails.airportTransportation" class="hotel-facilities"><i class="flaticon-departures"></i> Airport Transport
+                              </div>
+                              <!-- /.hotel-facilities -->
+                              <div  class="hotel-facilities"><i class="flaticon-bus"></i> Shuttle Bus Service</div>
+                              <!-- /.hotel-facilities -->
+                              <div *ngIf="specificHotelDetails.gym" class="hotel-facilities"><i class="flaticon-weightlifting"></i> Fitness Center
+                              </div>
+                              <!-- /.hotel-facilities -->
+                          </div>
+                          <div class="col-md-6">
+                              <div *ngIf="specificHotelDetails.pool"  class="hotel-facilities"><i class="flaticon-swim"></i> Pool</div>
+                              <!-- /.hotel-facilities -->
+                              <div  class="hotel-facilities"><i class="flaticon-spa"></i> SPA</div>
+                              <!-- /.hotel-facilities -->
+                              <div *ngIf="specificHotelDetails.restuarant" class="hotel-facilities"><i class="flaticon-tray"></i> Restaurant</div>
+                              <!-- /.hotel-facilities -->
+                              <div *ngIf="specificHotelDetails.wheelChairAccess" class="hotel-facilities"><i class="flaticon-supper"></i>Wheelchair Access</div>
+                              <!-- /.hotel-facilities -->
+                              <div  class="hotel-facilities"><i class="flaticon-portfolio"></i> Business Center
+                              </div>
+                              <!-- /.hotel-facilities -->
+                          </div>
+                      </div>
+
+                      <h4 class="mt-4 mb-3">About the Hotel</h4>
+                      <p>{{specificHotelDetails.description}}</p>
+
+                      <div class="hotel-review d-flex align-items-center mt-4 mb-3">
+                          <hr>
+
+                          <!-- /.rate fa-star-o -->
+
+                          <!-- /.review-starts-list big -->
+                      </div>
+                      <!-- /.hotel-review -->
+
+
+                      <!-- START-OF COMMENTS -->
+                      <div class="blog-comments-list">
+
+                          <!-- /.blog-comment media -->
+                      </div>
+                      <!-- END-OF COMMENTS -->
+
+
+                      <!-- /#map-canvas -->
+                  </div>
+                  <!-- /.col-lg-7 col-md-9 col-sm-12 -->
+                  <div class="col-lg-5 col-md-3 col-sm-12">
+                      <div class="sticky-sidebar">
+                          <div class="widget">
+                              <div class="body">
+                                  Phone Number: <span><b>{{specificHotelDetails.phoneNumber}}</b></span>
+                                  <div class="mt-2 mb-2">
+
+                                      Hotel Class: <span><b>{{specificHotelDetails.hotelClass}}</b></span>
+                                      
+
+                                      <!-- /.review-starts-list  -->
+                                  </div>
+                                  <div class="mt-2 mb-2">
+
+                                      Website/Email: <span><b><a href="{{specificHotelDetails.website}}">{{specificHotelDetails.website}}</a></b></span>
+
+
+                                      <!-- /.review-starts-list  -->
+                                  </div>
+                                  <div class="mt-2 mb-2">
+
+                                      Hotel Style: <span><b>Luxury</b></span>
+
+
+                                      <!-- /.review-starts-list  -->
+                                  </div>
+                                  <hr data-title="Room Feature" class="mt-4 mb-4" />
+
+                                  <div class="hint-text mt-3">
+
+                                      <div class="hotel-facilities"><i class="flaticon-swim"></i> Pool</div>
+                                      <!-- /.hotel-facilities -->
+                                      <div class="hotel-facilities"><i class="flaticon-spa"></i> SPA</div>
+                                      <!-- /.hotel-facilities -->
+                                      <div class="hotel-facilities"><i class="flaticon-tray"></i> Restaurant</div>
+                                      <!-- /.hotel-facilities -->
+                                      <div class="hotel-facilities"><i class="flaticon-supper"></i>Wheelchair
+                                          Access</div>
+                                      <!-- /.hotel-facilities -->
+                                      <div class="hotel-facilities"><i class="flaticon-portfolio"></i> Business
+                                          Center
+                                      </div>
+                                      <!-- /.hotel-facilities -->
+
+                                  </div>
+                              </div>
+                              <!-- /.body -->
+                          </div>
+                          <!-- /.widget -->
+
+
+                          <!-- /.row -->
+
+                      </div>
+                      <!-- /.sticky-sidebar -->
+                  </div>
+                  <!-- /.col-lg-5 col-md-3 col-sm-12 -->
+              </div>
+              <!-- /.row -->
+          </div>
+          <!-- /.container -->
+      </div>
+      <!-- /.section -->
+
+      <!-- START Login Modal -->
+
+      <!-- #reset-password-modal .modal -->
+      <!-- END-OF Register Modal -->
+
+  </main>

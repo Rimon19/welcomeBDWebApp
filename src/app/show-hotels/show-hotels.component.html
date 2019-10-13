@@ -1,0 +1,14 @@
+<main style="padding-top:26px;">
+  
+  <div class="section">
+      <div class="container"> 
+          <div *ngFor="let hotel of hotels" style="width: 300px;">
+              <div>{{hotel.name}}</div>
+              <div><a [routerLink]="['/room/', hotel.key]">Save Room</a></div>
+            </div>
+      </div>
+  </div>
+
+
+</main>
+
