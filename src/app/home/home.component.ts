@@ -45,12 +45,17 @@ export class HomeComponent implements OnInit {
   getRestuarent() {
     // Use snapshotChanges().map() to store the key
     this.restuarentService.getRestuarent().snapshotChanges().pipe(
-      map(changes =>
-        changes.map(c => ({ key: c.payload.key, ...c.payload.val() }))
-      )
+      
     ).subscribe(c => {
-      this.objRestuarents = c;
-     
+      //this.objRestuarents = c;
+      this.objRestuarents = [];
+          c.forEach(element => {
+            var y = element.payload.toJSON();
+            y["key"] = element.key; 
+                               
+                   this.objRestuarents.push(y as Resturent);
+                      
+          });           
     });
 
    
@@ -59,12 +64,19 @@ export class HomeComponent implements OnInit {
   getHotels() {
     // Use snapshotChanges().map() to store the key
     this.hotels.getHotels().snapshotChanges().pipe(
-      map(changes =>
-        changes.map(c => ({ key: c.payload.key, ...c.payload.val() }))
-      )
+      // map(changes =>
+      //   changes.map(c => ({ key: c.payload.key, ...c.payload.val() }))
+      // )
     ).subscribe(c => {
-      this.objHotels = c;
      
+      this.objHotels = [];
+      c.forEach(element => {
+        var y = element.payload.toJSON();
+        y["key"] = element.key; 
+                           
+               this.objHotels.push(y as hotel);
+                  
+      });   
     });
 
    
@@ -74,12 +86,19 @@ export class HomeComponent implements OnInit {
   getHotelPlaces() {
     // Use snapshotChanges().map() to store the key
     this.hotelsPlaces.getHotels().snapshotChanges().pipe(
-      map(changes =>
-        changes.map(c => ({ key: c.payload.key, ...c.payload.val() }))
+      //map(changes =>
+      //  changes.map(c => ({ key: c.payload.key, ...c.payload.val() }))
       )
-    ).subscribe(c => {
-      this.objHotelPlaces= c;
-      
+    .subscribe(c => {
+    //  this.objHotelPlaces= c;
+    this.objHotelPlaces = [];
+    c.forEach(element => {
+      var y = element.payload.toJSON();
+      y["key"] = element.key; 
+                         
+             this.objHotelPlaces.push(y as HotelPlace);
+                
+    });   
     });
     
       
